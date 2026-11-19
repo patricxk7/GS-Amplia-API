@@ -53,6 +53,7 @@ Servico Web com **Docker** (usa o `Dockerfile` da raiz). Configure `DB_URL`, `DB
 
 #### Links
 - **GitHub:** https://github.com/usuario/GS-Amplia-2026
+- **Deploy (Render):** https://gs-amplia-api.onrender.com
 
 ## Participantes 
 1. Erick Munhoes Anciães - 561484
