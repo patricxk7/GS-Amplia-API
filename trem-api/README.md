@@ -51,6 +51,9 @@ para cadastrar, editar e excluir em todas as 10 tabelas.
 ## Deploy (Render)
 Servico Web com **Docker** (usa o `Dockerfile` da raiz). Configure `DB_URL`, `DB_USER` e `DB_PASSWORD` em Environment. Se o `Dockerfile` não estiver na raiz do repositório, defina *Root Directory* como `trem-api`.
 
+## Links
+- **GitHub:** https://github.com/usuario/GS-Amplia-2026
+
 ## Participantes 
 1. Erick Munhoes Anciães - 561484
 2. João Paulo Fernandes - 563430
