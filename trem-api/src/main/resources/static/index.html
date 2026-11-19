@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel da Malha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside class="rail" aria-label="Navegação">
+    <a class="brand" href="#/" aria-label="Painel da Malha, início">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Painel da Malha</span>
+    </a>
+    <nav id="menu"></nav>
+  </aside>
+
+  <main id="conteudo" tabindex="-1"></main>
+
+  <dialog id="formDialog" aria-labelledby="formTitulo">
+    <form id="form" method="dialog" novalidate>
+      <header>
+        <h2 id="formTitulo"></h2>
+        <button type="button" class="icon" data-fechar aria-label="Fechar">×</button>
+      </header>
+      <div id="campos" class="campos"></div>
+      <ul id="formErros" class="erros" role="alert" hidden></ul>
+      <footer>
+        <button type="button" class="ghost" data-fechar>Cancelar</button>
+        <button type="submit" class="primary" id="salvar">Salvar</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <dialog id="confirmDialog" aria-labelledby="confirmTitulo">
+    <form method="dialog">
+      <header><h2 id="confirmTitulo">Excluir registro</h2></header>
+      <p id="confirmTexto"></p>
+      <footer>
+        <button value="cancel" class="ghost">Cancelar</button>
+        <button value="ok" class="danger">Excluir</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

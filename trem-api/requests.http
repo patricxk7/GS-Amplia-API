@@ -1,0 +1,267 @@
+@host = http://localhost:8080
+
+### ===== Operadora =====
+
+### Listar
+GET {{host}}/operadoras
+
+### Buscar por codigo
+GET {{host}}/operadoras/1
+
+### Cadastrar
+POST {{host}}/operadoras
+Content-Type: application/json
+
+{
+  "nome": "Operadora Teste",
+  "cnpj": "01234567000199"
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/operadoras/1
+Content-Type: application/json
+
+{
+  "nome": "Operadora Teste",
+  "cnpj": "01234567000199"
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/operadoras/99
+
+### ===== Estacao =====
+
+### Listar
+GET {{host}}/estacoes
+
+### Buscar por codigo
+GET {{host}}/estacoes/1
+
+### Cadastrar
+POST {{host}}/estacoes
+Content-Type: application/json
+
+{
+  "nome": "Estacao Teste",
+  "endereco": "Rua Exemplo, 100",
+  "acessibilidade": "S",
+  "situacao": "A"
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/estacoes/1
+Content-Type: application/json
+
+{
+  "nome": "Estacao Teste",
+  "endereco": "Rua Exemplo, 100",
+  "acessibilidade": "S",
+  "situacao": "A"
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/estacoes/99
+
+### ===== Passageiro =====
+
+### Listar
+GET {{host}}/passageiros
+
+### Buscar por codigo
+GET {{host}}/passageiros/1
+
+### Cadastrar
+POST {{host}}/passageiros
+Content-Type: application/json
+
+{
+  "nome": "Carlos Teste",
+  "cpf": "12345678999",
+  "email": "carlos.teste@email.com",
+  "dataNascimento": "1999-01-15"
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/passageiros/1
+Content-Type: application/json
+
+{
+  "nome": "Carlos Teste",
+  "cpf": "12345678999",
+  "email": "carlos.teste@email.com",
+  "dataNascimento": "1999-01-15"
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/passageiros/99
+
+### ===== Linha =====
+
+### Listar
+GET {{host}}/linhas
+
+### Buscar por codigo
+GET {{host}}/linhas/1
+
+### Cadastrar
+POST {{host}}/linhas
+Content-Type: application/json
+
+{
+  "nome": "Linha Teste",
+  "cor": "Roxa",
+  "situacao": "A",
+  "tipoModal": "M",
+  "codigoOperadora": 1
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/linhas/1
+Content-Type: application/json
+
+{
+  "nome": "Linha Teste",
+  "cor": "Roxa",
+  "situacao": "A",
+  "tipoModal": "M",
+  "codigoOperadora": 1
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/linhas/99
+
+### ===== Trem =====
+
+### Listar
+GET {{host}}/trens
+
+### Buscar por codigo
+GET {{host}}/trens/1
+
+### Cadastrar
+POST {{host}}/trens
+Content-Type: application/json
+
+{
+  "modelo": "Modelo Teste",
+  "capacidade": 1500,
+  "situacao": "O",
+  "codigoLinha": 1
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/trens/1
+Content-Type: application/json
+
+{
+  "modelo": "Modelo Teste",
+  "capacidade": 1500,
+  "situacao": "O",
+  "codigoLinha": 1
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/trens/99
+
+### ===== Viagem =====
+
+### Listar
+GET {{host}}/viagens
+
+### Buscar por codigo
+GET {{host}}/viagens/1
+
+### Cadastrar
+POST {{host}}/viagens
+Content-Type: application/json
+
+{
+  "dataHoraPartida": "2026-11-19T06:00:00",
+  "dataHoraChegada": "2026-11-19T06:45:00",
+  "situacao": "A",
+  "codigoTrem": 1
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/viagens/1
+Content-Type: application/json
+
+{
+  "dataHoraPartida": "2026-11-19T06:00:00",
+  "dataHoraChegada": "2026-11-19T06:45:00",
+  "situacao": "A",
+  "codigoTrem": 1
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/viagens/99
+
+### ===== Bilhete =====
+
+### Listar
+GET {{host}}/bilhetes
+
+### Buscar por codigo
+GET {{host}}/bilhetes/1
+
+### Cadastrar
+POST {{host}}/bilhetes
+Content-Type: application/json
+
+{
+  "valor": 5.2,
+  "dataCompra": "2026-11-19T05:50:00",
+  "situacao": "A",
+  "codigoViagem": 1,
+  "codigoPassageiro": 1,
+  "codigoEstacaoOrigem": 1,
+  "codigoEstacaoDestino": 2
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/bilhetes/1
+Content-Type: application/json
+
+{
+  "valor": 5.2,
+  "dataCompra": "2026-11-19T05:50:00",
+  "situacao": "A",
+  "codigoViagem": 1,
+  "codigoPassageiro": 1,
+  "codigoEstacaoOrigem": 1,
+  "codigoEstacaoDestino": 2
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/bilhetes/99
+
+### ===== LinhaEstacao =====
+
+### Listar
+GET {{host}}/linhas-estacoes
+
+### Buscar por codigo
+GET {{host}}/linhas-estacoes/1
+
+### Cadastrar
+POST {{host}}/linhas-estacoes
+Content-Type: application/json
+
+{
+  "ordem": 4,
+  "codigoLinha": 1,
+  "codigoEstacao": 4
+}
+
+### Atualizar (troque o codigo na URL)
+PUT {{host}}/linhas-estacoes/1
+Content-Type: application/json
+
+{
+  "ordem": 4,
+  "codigoLinha": 1,
+  "codigoEstacao": 4
+}
+
+### Excluir (troque o codigo na URL)
+DELETE {{host}}/linhas-estacoes/99
