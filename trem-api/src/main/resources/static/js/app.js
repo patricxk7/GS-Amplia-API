@@ -1,4 +1,4 @@
-/* Painel da Malha - front-end da API de trens (JS puro, sem build).
+/* Amplia - front-end da API de trens (JS puro, sem build).
    Cada recurso e descrito em RECURSOS; a tela de lista e o formulario saem dessa configuracao. */
 (() => {
   'use strict';
@@ -187,7 +187,7 @@
     main.replaceChildren(
       el('div', { class: 'faixa' }),
       el('div', { class: 'topo' }, el('div', {},
-        el('h1', {}, 'Painel da Malha'),
+        el('h1', {}, 'Amplia'),
         el('p', { class: 'sub' }, 'Cadastre e consulte operadoras, estações, linhas, trens, viagens e bilhetes. Escolha uma estação do mapa para começar.')),
         el('span', { class: 'status', id: 'status' }, 'Conectando à API…')),
       el('div', { class: 'mapa', id: 'mapa' }));
