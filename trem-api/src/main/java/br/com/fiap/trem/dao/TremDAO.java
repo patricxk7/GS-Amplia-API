@@ -102,8 +102,8 @@ public class TremDAO {
         x.setCodigo(JdbcUtil.getInteger(rs, "CDG_TREM"));
         x.setModelo(rs.getString("NME_MODELO"));
         x.setCapacidade(JdbcUtil.getInteger(rs, "QTD_CAPACIDADE"));
-        x.setSituacao(rs.getString("SITUACAO_TREM_STA_TREM"));
-        x.setCodigoLinha(JdbcUtil.getInteger(rs, "LINHA_CDG_LINHA"));
+        x.setSituacao(rs.getString("STA_TREM"));
+        x.setCodigoLinha(JdbcUtil.getInteger(rs, "CDG_LINHA"));
         return x;
     }
 }

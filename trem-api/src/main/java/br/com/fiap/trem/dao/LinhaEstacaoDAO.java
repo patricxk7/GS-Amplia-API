@@ -100,8 +100,8 @@ public class LinhaEstacaoDAO {
         LinhaEstacao x = new LinhaEstacao();
         x.setCodigo(JdbcUtil.getInteger(rs, "CDG_LINHA_ESTACAO"));
         x.setOrdem(JdbcUtil.getInteger(rs, "ORD_LINHA_ESTACAO"));
-        x.setCodigoLinha(JdbcUtil.getInteger(rs, "LINHA_CDG_LINHA"));
-        x.setCodigoEstacao(JdbcUtil.getInteger(rs, "ESTACAO_CDG_ESTACAO"));
+        x.setCodigoLinha(JdbcUtil.getInteger(rs, "CDG_LINHA"));
+        x.setCodigoEstacao(JdbcUtil.getInteger(rs, "CDG_ESTACAO"));
         return x;
     }
 }

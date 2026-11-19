@@ -103,7 +103,7 @@ public class ViagemDAO {
         x.setDataHoraPartida(JdbcUtil.getLocalDateTime(rs, "DTA_HORA_PARTIDA"));
         x.setDataHoraChegada(JdbcUtil.getLocalDateTime(rs, "DTA_HORA_CHEGADA"));
         x.setSituacao(rs.getString("STA_SITUACAO"));
-        x.setCodigoTrem(JdbcUtil.getInteger(rs, "TREM_CDG_TREM"));
+        x.setCodigoTrem(JdbcUtil.getInteger(rs, "CDG_TREM"));
         return x;
     }
 }

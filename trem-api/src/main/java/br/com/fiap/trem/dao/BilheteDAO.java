@@ -106,10 +106,10 @@ public class BilheteDAO {
         x.setValor(rs.getBigDecimal("VLR_BILHETE"));
         x.setDataCompra(JdbcUtil.getLocalDateTime(rs, "DTA_COMPRA"));
         x.setSituacao(rs.getString("STA_SITUACAO"));
-        x.setCodigoViagem(JdbcUtil.getInteger(rs, "VIAGEM_CDG_VIAGEM"));
-        x.setCodigoPassageiro(JdbcUtil.getInteger(rs, "PASSAGEIRO_CDG_PASSAGEIRO"));
-        x.setCodigoEstacaoOrigem(JdbcUtil.getInteger(rs, "ESTACAO_CDG_ESTACAO_ORIGEM"));
-        x.setCodigoEstacaoDestino(JdbcUtil.getInteger(rs, "ESTACAO_CDG_ESTACAO_DESTINO"));
+        x.setCodigoViagem(JdbcUtil.getInteger(rs, "CDG_VIAGEM"));
+        x.setCodigoPassageiro(JdbcUtil.getInteger(rs, "CDG_PASSAGEIRO"));
+        x.setCodigoEstacaoOrigem(JdbcUtil.getInteger(rs, "CDG_ESTACAO_ORIGEM"));
+        x.setCodigoEstacaoDestino(JdbcUtil.getInteger(rs, "CDG_ESTACAO_DESTINO"));
         return x;
     }
 }

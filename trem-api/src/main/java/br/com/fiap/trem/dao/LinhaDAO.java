@@ -104,8 +104,8 @@ public class LinhaDAO {
         x.setNome(rs.getString("NME_LINHA"));
         x.setCor(rs.getString("COR_LINHA"));
         x.setSituacao(rs.getString("STA_SITUACAO"));
-        x.setTipoModal(rs.getString("TIPO_MODAL_TPO_MODAL"));
-        x.setCodigoOperadora(JdbcUtil.getInteger(rs, "OPERADORA_CDG_OPERADORA"));
+        x.setTipoModal(rs.getString("TPO_MODAL"));
+        x.setCodigoOperadora(JdbcUtil.getInteger(rs, "CDG_OPERADORA"));
         return x;
     }
 }
