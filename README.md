@@ -52,7 +52,7 @@ para cadastrar, editar e excluir em todas as 10 tabelas.
 Servico Web com **Docker** (usa o `Dockerfile` da raiz). Configure `DB_URL`, `DB_USER` e `DB_PASSWORD` em Environment. Se o `Dockerfile` não estiver na raiz do repositório, defina *Root Directory* como `trem-api`.
 
 #### Links
-- **GitHub:** https://github.com/usuario/GS-Amplia-2026
+- **GitHub:** https://github.com/patricxk7/GS-Amplia-API
 - **Deploy (Render):** https://gs-amplia-api.onrender.com
 
 ## Participantes 
